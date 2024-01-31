@@ -1,0 +1,18 @@
+{
+  
+  "manifest_version": 3,
+  "name": "RA Ulife",
+  "version": "1.0",
+  "description": "Mostra o seu RA no site da Ulife",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.ulife.com.br/Community/FullProfile.aspx"],
+      "js": ["script.js"]
+    }
+  ]
+}
